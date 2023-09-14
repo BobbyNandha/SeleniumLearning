@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testing]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="firstmaven.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="both(failed)">
+    <classes>
+      <class name="firstmaven.ErrorValidation">
+        <methods>
+          <include name="lanchApplication"/>
+          <include name="inCorrectLoginErrorValidationtest"/>
+          <include name="driverClose"/>
+        </methods>
+      </class> <!-- firstmaven.ErrorValidation -->
+    </classes>
+  </test> <!-- both(failed) -->
+</suite> <!-- Failed suite [testing] -->
